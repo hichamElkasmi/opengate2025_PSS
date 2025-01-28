@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.210.83:1521:rbkt19c
+    username: OPENGATE
+    password: mxp
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+keycloak:
+  realm: iamssapi
+  auth-server-url: http://localhost:5030
+  resource: sspartnerapi
+  ssl-required: external
+  bearer-only: true
+  use-resource-role-mappings: true
+logging:
+  file: 
+    name: /appli/s2mapi/OpenGate/logs/partnerapi.log

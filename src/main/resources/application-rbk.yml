@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@192.168.210.83:1521:rbkt19c
     username: OPENGATE
-    password: mxp
+    password: rbk$123
     driver-class-name: oracle.jdbc.driver.OracleDriver 
 keycloak:
   realm: iamssapi

@@ -1,0 +1,3 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1577811752740,1650,Authentication Request,200,,ssapi 1-1,text,true,,446,307,1,1,1649,0,1026
+1577811754754,603,Ping api,200,,ssapi 1-1,text,false,"The operation lasted too long: It took 603 milliseconds, but should not have lasted longer than 300 milliseconds.",496,304,1,1,598,0,111

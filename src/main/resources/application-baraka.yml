@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@10.10.50.63:1521:baraka
+    username: OPENGATEV2
+    password: mxp
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+keycloak:
+  enabled: false
+  realm: master
+  auth-server-url: http://localhost:5030
+  resource: AWASH_MOB_APP
+  ssl-required: external
+  bearer-only: true
+  use-resource-role-mappings: true
+logging:
+  file:
+    name: /home/opengate/Logs/opengate.log

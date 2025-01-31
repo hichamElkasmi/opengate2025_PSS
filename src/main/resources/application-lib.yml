@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@10.192.84.2:1521:dblib
+    username: OPENGATE
+    password: mxp
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+keycloak:
+  realm: iamssapi
+  auth-server-url: http://localhost:5030
+  resource: sspartnerapi
+  ssl-required: external
+  bearer-only: true
+  use-resource-role-mappings: true
+logging:
+  file: 
+    name: /home/tomcat/ApiHome/logs/partnerapi.log

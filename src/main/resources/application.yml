@@ -1,0 +1,49 @@
+spring:
+  main:
+    banner-mode: "off"
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+server:
+  error:
+    whitelabel:
+      enabled: false
+  shutdown: graceful
+  port: 5029
+info:
+  app:
+    name: '@project.name@'
+    description: Select System PARTNER API S2M@2021
+  build:
+    groupId: '@project.groupId@'
+    artifact: '@project.artifactId@'
+    name: '@project.name@'
+    version: '@project.version@'
+  env:
+    java:
+      vendor: ${java.specification.vendor}
+      vm-name: ${java.vm.name}
+      runtime-version: ${java.runtime.version}
+#springdoc:
+#  api-docs:
+#    enabled: true
+#    path: /guidejson
+#  swagger-ui:
+#    path: /spec
+#    operations-sorter: method
+jasypt:
+  encryptor:
+    password: $ENV.SECRET.VALUE
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
